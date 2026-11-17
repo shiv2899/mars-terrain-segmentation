@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual env - NEVER push
+venv/
+.venv/
+env/
+
+# Data - bahut bada hai
+data/
+!data/README.md
+
+# Model checkpoints - bahut bade hain
+checkpoints/
+*.pth
+*.pt
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+*.log
