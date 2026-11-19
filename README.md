@@ -23,9 +23,9 @@ Pixel Acc (ignoring 255) = **0.9063** - MISLEADING. 90% pixels are soil, so pred
 **What happened:**
 Model learned soil very well (0.8157) in just 2 epochs, but predicted everything as soil, so other 3 classes are 0. With 200 images and 2 epochs, the model never sees enough bedrock / sand / big rock examples. Full training on Colab (18k images, 15 epochs, class weighting) is needed to learn the rare classes.
 
-[Prediction 0](results/pred_0.png)
-[Prediction 1](results/pred_1.png)
-[Prediction 2](results/pred_2.png)
+![Prediction 0](results/pred_0.png)
+![Prediction 1](results/pred_1.png)
+![Prediction 2](results/pred_2.png)
 *Left: Image, Middle: Ground Truth (black = 255 unlabeled), Right: Prediction (orange = soil). Model predicts soil everywhere - it has only learned the dominant class so far.*
 
 Full per-class results in `results/per_class_iou.csv`.
